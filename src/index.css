@@ -1,13 +1,54 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+:root{
+  
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
+    color-scheme: light dark;
+   color: rgba(255, 255, 255, 0.87);
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto-Regular.ttf");
+}
+
+body{
+  font-family: "Roboto",sans-serif;
+  background-color: light-dark(#fbf8ef, #040d12);
+  color: light-dark(#1a1a1d, #faf7f0) !important;
+}
+
+.blur{
+  content:'';
+  box-shadow: 0 0 1000px 72px light-dark( #A0C878,#A0C878);
+  top: 0;
+  left: 0;
+  padding: 0; 
+  position: absolute;
+  border-radius: 100%;
+  filter: blur(24px);
+  z-index: -1;
+}
+.navbar-dark .navbar-nav .nav-link {
+ color: light-dark( #040d12,#fbf8ef);
+}
+.navbar-toggler{
+  background-color: light-dark( #A0C878,#DDEB9D);
+  color: light-dark( #040d12,#fbf8ef);
+}
+.nav-link{
+  font-size: 1.4rem;
+}
+.card{
+  padding: 1.3rem;
+  margin: auto;
+  background-color:light-dark( #A0C878, #DDEB9D);
+}
+.card .btn{
+  background-color:#040d12;
+  color: #faf7f0;
+  font-size: 1.4rem;
 }
