@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
     <>
-      <div classNameName="container">
+      <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark">
           <div className="container-fluid">
             <button
@@ -18,9 +20,9 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">
+                  <Link className="nav-link active" to="/" aria-current="page" href="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -28,9 +30,9 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Pricing
-                  </a>
+                  <Link className="nav-link" href="/contact" to="/contact">
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
