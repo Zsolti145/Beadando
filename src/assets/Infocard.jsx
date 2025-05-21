@@ -9,7 +9,7 @@ const Infocard = ({ title, description }) => {
         className={`flip-card  ${flipped ? "flipped" : ""}`}
         onClick={() => setFlipped(!flipped)}
       >
-        {/* <img src className="card-img-top" height={"250px"} /> */}
+        
         <div className="flip-card-inner">
           <div className="flip-card-front">
       <div className="card-body">

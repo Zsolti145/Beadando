@@ -42,13 +42,65 @@ body{
 .nav-link{
   font-size: 1.4rem;
 }
+header {
+  background-image: url(gamercomp-ru-XnjicGgCtqc-unsplash.jpg);
+  background-size: cover;
+  background-attachment:fixed;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #faf7f0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  
+}
+header h1{
+    background-color: #776f5c94;
+    padding:20px;
+    border-radius: 12px;
+  
+}
+@media (prefers-color-scheme: dark) {
+ header {
+    background-image: url("/white.png");
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: 1000px;
+   
+   
+  }
+  
+}
+.features{
+  font-size: 1.2rem;
+}
+#pcpic{
+  width: 580px;
+}
+
+@media screen and (max-width : 852px) {
+  .features{
+    font-size: 1.3rem;
+  }
+   #pcpic{
+ width: 360px;
+  }
+}
+
 
 .flip-card {
   width: 18rem;
   height: 580px;
   perspective: 1000px;
-  margin: 20px;
- color: #040d12;
+  margin: auto;
+  color: #040d12;
   border-radius: 10px;
 }
 
@@ -87,17 +139,56 @@ body{
   background-color:light-dark( #A0C878,#DDEB9D);
   transform: rotateY(180deg);
 }
-.card .btn{
+@media screen and (max-width: 768px) {
+  .flip-card {
+    width: 75%;
+    height: 450px;
+  }
+  .flip-card-inner {
+    transition: transform 0.4s;
+  }
+  .flip-card-front,
+  .flip-card-back {
+   font-size: 1.4rem;
+  }
+  
+}
+
+/* .card .btn{
   background-color:#040d12;
   color: #faf7f0;
   font-size: 1.4rem;
   margin: 1.2px;
+} */
+.form-control{
+   color: #040d12;
+  border-radius: 12px;
+  padding: 5px;
+width: 280px;
 }
-
 
 
 form .btn{
-  background-color: #DDEB9D;
+  background-color: light-dark( #A0C878,#DDEB9D);
   margin: 3px;
   gap: 1px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
+
+
+#footer ul,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 864px) {
+ #footer{
+   flex-direction: column!important;
+  }
+  
+}
+

@@ -6,9 +6,7 @@ function Navbar() {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark">
           <div className="container-fluid">
-            <button
-              className="navbar-toggler ms-auto ms-lg-0"
-              type="button"
+            <button  className="navbar-toggler ms-auto ms-lg-0"  type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown"
@@ -21,17 +19,17 @@ function Navbar() {
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
                   <Link className="nav-link active" to="/" aria-current="page" href="/">
-                    Home
+                    Főodlal
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Features
+                  <a className="nav-link" href="#services" to="/">
+                    Szolgáltatásaink
                   </a>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" href="/contact" to="/contact">
-                    Contact
+                    Kapcsolat
                   </Link>
                 </li>
               </ul>
