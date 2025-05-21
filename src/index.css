@@ -1,51 +1,51 @@
-:root{
-  
+:root {
   line-height: 1.5;
   font-weight: 400;
-    color-scheme: light dark;
-   color: rgba(255, 255, 255, 0.87);
-  
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("/Roboto-Regular.ttf");
 }
 
-body{
-  font-family: "Roboto",sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   background-color: light-dark(#fbf8ef, #040d12);
   color: light-dark(#1a1a1d, #faf7f0) !important;
 }
 
-.blur{
-  content:'';
-  box-shadow: 0 0 1000px 72px light-dark( #A0C878,#A0C878);
+.blur {
+  content: "";
+  box-shadow: 0 0 1000px 72px light-dark(#a0c878, #a0c878);
   top: 0;
   left: 0;
-  padding: 0; 
+  padding: 0;
   position: absolute;
   border-radius: 100%;
   filter: blur(24px);
   z-index: -1;
 }
 .navbar-dark .navbar-nav .nav-link {
- color: light-dark( #040d12,#fbf8ef);
+  color: light-dark(#040d12, #fbf8ef);
 }
-.navbar-toggler{
-  background-color: light-dark( #A0C878,#DDEB9D);
-  color: light-dark( #040d12,#fbf8ef);
+.navbar-toggler {
+  background-color: light-dark(#a0c878, #ddeb9d);
+  color: light-dark(#040d12, #fbf8ef);
 }
-.nav-link{
+.nav-link {
   font-size: 1.4rem;
 }
 header {
-  background-image: url("blackmotherboard.jpg");
+  background-image: url("/public/blackmotherboard.jpg");
   background-size: cover;
-  background-attachment:fixed;
+  background-attachment: fixed;
   height: 75vh;
   display: flex;
   align-items: center;
@@ -55,45 +55,39 @@ header {
   font-size: 2.5rem;
   font-weight: bold;
   position: relative;
-  
 }
-header h1{
-    background-color: #776f5c94;
-    padding:20px;
-    border-radius: 12px;
-  
+header h1 {
+  background-color: #776f5c94;
+  padding: 20px;
+  border-radius: 12px;
 }
 @media (prefers-color-scheme: dark) {
- header {
-    background-image: url("/white.png");
+  header {
+    background-image: url("/whitepic.png");
   }
 }
 @media screen and (max-width: 768px) {
   header {
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-size: 1000px;
-   
-   
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 1000px;
   }
-  
 }
-.features{
+.features {
   font-size: 1.2rem;
 }
-#pcpic{
+#pcpic {
   width: 580px;
 }
 
-@media screen and (max-width : 852px) {
-  .features{
+@media screen and (max-width: 852px) {
+  .features {
     font-size: 1.3rem;
   }
-   #pcpic{
- width: 360px;
+  #pcpic {
+    width: 360px;
   }
 }
-
 
 .flip-card {
   width: 18rem;
@@ -111,6 +105,11 @@ header h1{
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+}
+.flip-card-front:hover,
+.flip-card-back:hover {
+  background-color: #faf7f0;
+  cursor: pointer;
 }
 
 .flip-card.flipped .flip-card-inner {
@@ -132,11 +131,11 @@ header h1{
 }
 
 .flip-card-front {
-  background-color: light-dark( #A0C878,#DDEB9D);
+  background-color: light-dark(#a0c878, #ddeb9d);
 }
 
 .flip-card-back {
-  background-color:light-dark( #A0C878,#DDEB9D);
+  background-color: light-dark(#a0c878, #ddeb9d);
   transform: rotateY(180deg);
 }
 @media screen and (max-width: 768px) {
@@ -149,46 +148,41 @@ header h1{
   }
   .flip-card-front,
   .flip-card-back {
-   font-size: 1.4rem;
+    font-size: 1.4rem;
   }
-  
 }
 
-
-.form-control{
-   color: #040d12;
+.form-control {
+  color: #040d12;
   border-radius: 12px;
   padding: 5px;
-width: 280px;
+  width: 280px;
 }
 
-
-form .btn{
-  background-color: light-dark( #A0C878,#DDEB9D);
+form .btn {
+  background-color: light-dark(#a0c878, #ddeb9d);
   margin: 3px;
   gap: 1px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
-
-#footer ul,li{
+#footer ul,
+li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 @media screen and (max-width: 864px) {
- #footer{
-   flex-direction: column!important;
-   align-items:center!important;
+  #footer {
+    flex-direction: column !important;
+    align-items: center !important;
   }
-  
 }
-.footerContact li{
+.footerContact li {
   margin: 0;
-padding: 5px;
+  padding: 5px;
   font-size: 1.3rem;
 }

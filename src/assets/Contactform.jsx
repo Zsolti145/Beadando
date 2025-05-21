@@ -1,8 +1,6 @@
 function Footer() {
   return (
     <>
-        
-
           <div footer-content>
             <form action="">
               <div className="mb-3">
@@ -20,8 +18,6 @@ function Footer() {
               <input className="btn" type="submit" value="Üzenet" />
             </form>
         </div>
-       
-       
     </>
   );
 }

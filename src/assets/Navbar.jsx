@@ -23,9 +23,9 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#services" to="/services">
+                  <Link className="nav-link" href="#services" to="/">
                     Szolgáltatásaink
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" href="/contact" to="/contact">
