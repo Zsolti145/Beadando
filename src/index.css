@@ -43,7 +43,7 @@ body{
   font-size: 1.4rem;
 }
 header {
-  background-image: url(gamercomp-ru-XnjicGgCtqc-unsplash.jpg);
+  background-image: url("blackmotherboard.jpg");
   background-size: cover;
   background-attachment:fixed;
   height: 75vh;
@@ -154,12 +154,7 @@ header h1{
   
 }
 
-/* .card .btn{
-  background-color:#040d12;
-  color: #faf7f0;
-  font-size: 1.4rem;
-  margin: 1.2px;
-} */
+
 .form-control{
    color: #040d12;
   border-radius: 12px;
@@ -188,7 +183,12 @@ form .btn{
 @media screen and (max-width: 864px) {
  #footer{
    flex-direction: column!important;
+   align-items:center!important;
   }
   
 }
-
+.footerContact li{
+  margin: 0;
+padding: 5px;
+  font-size: 1.3rem;
+}

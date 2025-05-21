@@ -6,12 +6,12 @@ function Contact() {
     <>
       <Navbar />
 
-      <h1>Ár ajánlattal kapcsolatban írjon nekünk!</h1>
-
-      <div className="d-flex justify-content-center  mt-5">
-        
-            
-        <Contactform />
+      <h1>Kérdéseivel kapcsolatban írjon nekünk!</h1>
+      <div className="d-flex  flex-column align-items-center  gap-5 mt-5">
+        <p>Akár árajánlattal kapcsolatban vagy reklamáció esetén is írhat.</p>
+        <div>
+          <Contactform />
+        </div>
       </div>
     </>
   );

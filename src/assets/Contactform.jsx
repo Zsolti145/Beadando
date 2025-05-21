@@ -1,8 +1,8 @@
-function Footer(props) {
+function Footer() {
   return (
     <>
-      
-        <footer>
+        
+
           <div footer-content>
             <form action="">
               <div className="mb-3">
@@ -13,10 +13,15 @@ function Footer(props) {
                 <label htmlFor="name">Email:</label>
                 <input className="form-control" type="text" name="name" />
               </div>
-              <input className="btn" type="submit" value="Feliratkozás" />
+              <div className="mb-3">
+                
+                <textarea class="form-control"  rows="3" ></textarea>
+              </div>
+              <input className="btn" type="submit" value="Üzenet" />
             </form>
         </div>
-        </footer>
+       
+       
     </>
   );
 }

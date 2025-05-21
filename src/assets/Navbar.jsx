@@ -19,11 +19,11 @@ function Navbar() {
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
                   <Link className="nav-link active" to="/" aria-current="page" href="/">
-                    Főodlal
+                    Főoldal
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#services" to="/">
+                  <a className="nav-link" href="#services" to="/services">
                     Szolgáltatásaink
                   </a>
                 </li>

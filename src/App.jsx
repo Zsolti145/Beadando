@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+
 import "./App.css";
 import Navbar from "./assets/Navbar.jsx";
 import Infocard from "./assets/Infocard.jsx";
@@ -20,9 +21,7 @@ function Home() {
       
         <section className="features container d-flex flex-row  justify-content-center flex-wrap gap-5 mt-5 mb-5" >
     <div >
-         <h2 className="mb-5">Számítógép a személyedre szabva.</h2>
-    
-       
+         <h2 className="mb-5">Számítógép a személyedre szabva.</h2>    
        <div className="d-flex flex-column  justify-content-center mb-3">
         <p>  <FontAwesomeIcon icon={faCircleCheck} style={{color: "#DDEB9D",height:"20px", marginRight:"9px"}}  />
        Közvetlenül a gyártótól vásárolt alkatrészekből építjük össze a gépeinket.
@@ -45,12 +44,13 @@ function Home() {
           </div>
 
         </section>
+
       <h2>Szolgáltatásaink</h2>
       <section id="services" className="container d-flex flex-wrap flex-direction-row gap-2">
         <Infocard title={"Konfigurációk"} description={"Válassz az álatlunk gondos kezekkel összeépített gépeink közül."} />
         <Infocard title={"Egyedi konfiguráció"} description={"Számítógép alkatrészeink szélesválasztékából állíthatod össze a saját konfigurációdat,és ha úgy döntesz akkor össze is rakjuk neked!"} />
-        <Infocard title={"Szervíz"} description={"Bármi féle készüléket,alkatrészt szervízünk beszámít és a lehető legrövdebb idő alatt igyekszünk megcsinálni."} />
-        {/* <Infocard title={"Cégeknek"} description={"HEllo"} /> */}
+        <Infocard title={"Szervíz"} description={"Bármiféle készüléket,alkatrészt szervízünk beszámít és a lehető legrövidebb idő alatt igyekszünk megcsinálni."} />
+       
       </section>
       <Footer/>
     </>
