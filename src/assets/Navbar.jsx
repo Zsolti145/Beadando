@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -6,7 +6,9 @@ function Navbar() {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark">
           <div className="container-fluid">
-            <button  className="navbar-toggler ms-auto ms-lg-0"  type="button"
+            <button
+              className="navbar-toggler ms-auto ms-lg-0"
+              type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown"
@@ -18,17 +20,17 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav m-auto">
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/" aria-current="page" href="/">
+                  <Link className="nav-link active" to="/" aria-current="page">
                     Főoldal
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" href="#services" to="/">
+                  <a className="nav-link" href="#services">
                     Szolgáltatásaink
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" href="/contact" to="/contact">
+                  <Link className="nav-link" to="/contact">
                     Kapcsolat
                   </Link>
                 </li>
