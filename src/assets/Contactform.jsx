@@ -9,6 +9,8 @@ function ContactForm() {
         </p>
       </div>
  <form name="contact" className="contact-form row g-4" method="POST" data-netlify="true" action="/success">
+   <input type="hidden" name="form-name" value="contact" />
+
              <div className="col-12 col-md-6">
           <label className="form-label" htmlFor="name">
             Név*
