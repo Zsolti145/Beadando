@@ -7,6 +7,7 @@ import Navbar from "./assets/Navbar.jsx";
 import Infocard from "./assets/Infocard.jsx";
 import Contact from "./pages/Contact.jsx";
 import Footer from "./assets/Footer.jsx";
+import Succes from "./assets/Succes.jsx;
 
 function Home() {
   return (
@@ -91,6 +92,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/succes" element={<Succes/>} />
       </Routes>
     </BrowserRouter>
   );
