@@ -43,7 +43,7 @@ body {
   font-size: 1.4rem;
 }
 header {
-  background-image: url("/public/blackmotherboard.jpg");
+  background-image: url("/blackmotherboard.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 75vh;
