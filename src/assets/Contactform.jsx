@@ -8,9 +8,8 @@ function ContactForm() {
           jelentkeznek.
         </p>
       </div>
-
-      <form className="contact-form row g-4"  method="POST"  data-netlify="true"  action="/success"  >
-        <div className="col-12 col-md-6">
+ <form name="contact" className="contact-form row g-4" method="POST" data-netlify="true" action="/success">
+             <div className="col-12 col-md-6">
           <label className="form-label" htmlFor="name">
             Név*
           </label>
