@@ -18,6 +18,12 @@ function Contact() {
         </div>
 
         <div className="d-flex justify-content-center">
+             {/* Hidden Netlify detection form */}
+  <form name="contact" netlify hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+  </form>
           <ContactForm />
         </div>
       </section>
