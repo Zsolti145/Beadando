@@ -63,7 +63,7 @@ function ContactForm() {
           ></textarea>
         </div>
 
-        <div className="col-12 text-center" data-netlify-recaptcha="true">
+        <div className="col-12 text-center">
           <button className="btn contact-submit" type="submit">
             Üzenet elküldése
           </button>
