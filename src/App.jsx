@@ -7,7 +7,7 @@ import Navbar from "./assets/Navbar.jsx";
 import Infocard from "./assets/Infocard.jsx";
 import Contact from "./pages/Contact.jsx";
 import Footer from "./assets/Footer.jsx";
-import Success from "./assets/Success.jsx";
+import Success from "./pages/Success.jsx";
 
 function Home() {
   return (

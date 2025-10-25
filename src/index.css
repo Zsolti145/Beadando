@@ -237,7 +237,8 @@ li {
   border: 1px solid light-dark(#ccd6cb, rgba(255, 255, 255, 0.15));
   background-color: light-dark(#f9faf7, rgba(255, 255, 255, 0.07));
   color: inherit;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
   box-shadow: none;
 }
 
@@ -269,7 +270,8 @@ li {
   background-image: linear-gradient(135deg, #a0c878, #ddeb9d);
   color: #040d12;
   border: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-position 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-position 0.2s ease;
   background-size: 120%;
 }
 
@@ -299,4 +301,31 @@ li {
   .contact-form .btn {
     width: 100%;
   }
+}
+
+.succes-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  color: #120318;
+  background-color: light-dark(#a0c878, #ddeb9d);
+  border-radius: 12px;
+  text-decoration: none;
+}
+.succes-btn:hover {
+  background-color: light-dark(#89b65c, #c9f08b);
+}
+.success-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* From https://css.glass */
+  background: light-dark(rgba(32, 30, 30, 0.103), rgba(109, 108, 108, 0.116));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.137);
 }
