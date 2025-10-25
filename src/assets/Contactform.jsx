@@ -8,11 +8,17 @@ function ContactForm() {
           jelentkeznek.
         </p>
       </div>
- <form name="contact" className="contact-form row g-4" method="POST" data-netlify="true" action="/success">
-   <input type="hidden" name="form-name" value="contact" />
-   <input type="hidden" name="redirect" value="/success" />
+      <form
+        name="contact"
+        className="contact-form row g-4"
+        method="POST"
+        data-netlify="true"
+        action="/success"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+         <input type="hidden" name="bot-field" />
 
-             <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6">
           <label className="form-label" htmlFor="name">
             Név*
           </label>
@@ -55,7 +61,7 @@ function ContactForm() {
             required
           ></textarea>
         </div>
-            
+
         <div className="col-12 text-center" data-netlify-recaptcha="true">
           <button className="btn contact-submit" type="submit">
             Üzenet elküldése
