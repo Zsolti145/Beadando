@@ -4,12 +4,15 @@ import {resolve} from "path";
 import { copyFileSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import copySuccessHtml from "./vite-plugin-copy-success.js";
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),{
+  plugins: [react(),
+    copySuccessHtml(),{
 
    name: 'copy-redirects',
       closeBundle() {

@@ -11,10 +11,10 @@ function ContactForm() {
       <form
         name="contact"
         className="contact-form row g-4"
-        method="POST"
+        method="GET"
         data-netlify="true"
         netlify-honeypot="bot-field"
-        action="/Success.html"
+        action="/success"
       >
         <input type="hidden" name="form-name" value="contact" />
          <input type="hidden" name="bot-field" />
