@@ -11,7 +11,7 @@ function ContactForm() {
       <form
         name="contact"
         className="contact-form row g-4"
-        method="GET"
+        method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
         action="/success"
