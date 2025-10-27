@@ -93,6 +93,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Success.html" element={<Success/>} />
+        {/* <Route path="/success" element={<Success/>} /> Teszt okból kilövöm hátha megy a submission*/}
       </Routes>
     </BrowserRouter>
   );
