@@ -14,10 +14,11 @@ function ContactForm() {
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
-        action="/success.html"
+        action="/success"
       >
         <input type="hidden" name="form-name" value="contact" />
-         <input type="hidden" name="bot-field" />
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="redirect" value="/success" />
 
         <div className="col-12 col-md-6">
           <label className="form-label" htmlFor="name">
