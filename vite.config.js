@@ -14,10 +14,10 @@ export default defineConfig({
   plugins: [react(),
     copySuccessHtml(),{
 
-   name: 'copy-redirects',
-      closeBundle() {
-        copyFileSync(resolve(__dirname, 'public/_redirects'), resolve(__dirname, 'dist/_redirects'));
-    },
+  //  name: 'copy-redirects',
+  //     closeBundle() {
+  //       copyFileSync(resolve(__dirname, 'public/_redirects'), resolve(__dirname, 'dist/_redirects'));
+  //   },
   },
   ],
 })
