@@ -11,9 +11,12 @@ export default function copySuccessHtml() {
     closeBundle() {
       const distDir = path.resolve(__dirname, "dist");
       const indexFile = path.join(distDir, "index.html");
-      const successFile = path.join(distDir, "Success.html");
+      const successCandidates = ["success.html", "Success.html"].map((name) =>
+        path.join(distDir, name),
+      );
+      const successFile = successCandidates.find((file) => fs.existsSync(file));
 
-      if (fs.existsSync(indexFile) && fs.existsSync(successFile)) {
+      if (fs.existsSync(indexFile) && successFile) {
         const indexHtml = fs.readFileSync(indexFile, "utf-8");
         let successHtml = fs.readFileSync(successFile, "utf-8");
 
