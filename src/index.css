@@ -241,6 +241,10 @@ li {
     background-color 0.2s ease;
   box-shadow: none;
 }
+.contact-form .form-control::placeholder {
+  color: light-dark(#afc4af, #687568);
+  opacity: 1;
+}
 
 .contact-form .form-control:focus {
   border-color: light-dark(#7fb068, #c9f08b);
@@ -251,6 +255,7 @@ li {
 .contact-form textarea.form-control {
   min-height: 160px;
   resize: vertical;
+  color: ivory;
 }
 
 .contact-form .btn {
