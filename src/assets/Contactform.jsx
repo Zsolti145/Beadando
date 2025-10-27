@@ -15,7 +15,7 @@ function ContactForm() {
         data-netlify="true"
         netlify-honeypot="bot-field"
         onSubmit={"submit"}
-        action="/success/"
+        action="/Success.html"
       >
         <input type="hidden" name="form-name" value="contact" />
          <input type="hidden" name="bot-field" />

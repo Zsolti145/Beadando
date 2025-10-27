@@ -92,7 +92,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/success" element={<Success/>} />
+        <Route path="/Success.html" element={<Success/>} />
       </Routes>
     </BrowserRouter>
   );
